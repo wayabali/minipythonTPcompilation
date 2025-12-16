@@ -1,0 +1,41 @@
+start: stmt+
+ 
+?stmt: decl
+     | assign
+     | if_stmt
+     | while_stmt
+     | print_stmt
+     | block
+ 
+// Blocs de code entre accolades {}
+block: "{" stmt* "}"
+ 
+decl: "int" var_list ";"
+var_list: CNAME ("," CNAME)*
+ 
+assign: CNAME "=" expr ";"
+ 
+if_stmt: "if" "(" condition ")" stmt ("else" stmt)?
+while_stmt: "while" "(" condition ")" stmt
+ 
+print_stmt: "print" "(" CNAME ")" ";"
+ 
+?condition: expr COMP expr
+!COMP: "==" | "!=" | "<" | ">" | "<=" | ">="
+ 
+?expr: term
+     | expr "+" term -> add
+     | expr "-" term -> sub
+ 
+?term: factor
+     | term "*" factor -> mul
+     | term "/" factor -> div
+ 
+?factor: NUMBER
+       | CNAME
+       | "(" expr ")"
+ 
+%import common.CNAME
+%import common.NUMBER
+%import common.WS
+%ignore WS
