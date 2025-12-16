@@ -114,23 +114,9 @@ project-root/
 
 ---
 
-## 📖 Markdown (rappel)
-
-Ce fichier est écrit en **Markdown**, ce qui permet :
-- Une lecture claire en texte brut
-- Un affichage formaté sur GitHub et VS Code
-
-Exemples :
-
-- Titre : `# Titre`
-- Liste : `- élément`
-- Code : ```python ... ```
-
----
-
 ## 👨‍💻 Auteur
 
-- Nom : *Votre nom*
+- Nom : BALI MOHAMMED RYAD
 - Formation : *4ème ING GL*
 - Année : 2024 / 2025
 
@@ -138,5 +124,4 @@ Exemples :
 
 ## 📜 Licence
 
-Projet académique – usage pédagogique uniquement.
-
+APACHE 2.0
