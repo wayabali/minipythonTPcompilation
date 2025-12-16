@@ -1,6 +1,5 @@
 # MiniPython Project
-![Logo du projet](assets//ideogram-v3.0_Create_a_modern_minimalist_logo_for_the_Minipython_project_featuring_a_stylized_-0.jpg
-.png)
+![Logo du projet](assets//ideogram-v3.0_Create_a_modern_minimalist_logo_for_the_Minipython_project_featuring_a_stylized_-0.jpg)
 
 
 ## 📌 Description
